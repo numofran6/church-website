@@ -2,7 +2,7 @@ import React from 'react';
 
 export const BibleVerse = () => {
 	return (
-		<div className="text-center bg-purple-300 text-white py-5 sm:p-5">
+		<div className="text-center bg-purple-400 text-white py-5 sm:p-5">
 			<h1 className="text-xl sm:text-2xl font-bold">
 				2023 THEME: <span className="uppercase">I am a Wonder</span>
 			</h1>

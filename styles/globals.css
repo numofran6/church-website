@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btns {
-	@apply text-yellow-100 active:text-yellow-200 hover:text-[#ffff];
+	@apply text-yellow-100 active:scale-100 active:text-yellow-200 hover:scale-125 hover:text-[#ffff] transition duration-300 ease-out;
 }

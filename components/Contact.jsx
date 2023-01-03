@@ -4,13 +4,13 @@ import { MdAccessTime } from 'react-icons/md';
 export const Contact = () => {
 	return (
 		<div className="grid grid-cols-3 w-full">
-			<div className="flex flex-col justify-center p-7 font-bold  text-[1rem] leading-[1.5rem] sm:text-xl bg-yellow-100 text-gray-500 lg:pl-32">
+			<div className="flex flex-col justify-center p-7 font-bold  text-[1rem] leading-[1.5rem] sm:text-xl bg-yellow-200 text-yellow-500 lg:pl-32">
 				<p>Love God.</p>
 				<p>Love People.</p>
 				<p>Influence the World.</p>
 			</div>
 
-			<div className="col-span-2 p-4 sm:p-7 space-y-3 bg-green-100">
+			<div className="col-span-2 p-4 sm:p-7 space-y-3 bg-green-200">
 				<h1 className="text-[2rem] sm:text-5xl font-bold text-green-600">
 					Contact Details
 				</h1>
