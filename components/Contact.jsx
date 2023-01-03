@@ -14,22 +14,22 @@ export const Contact = () => {
 				<h1 className="text-[2rem] sm:text-5xl font-bold text-green-600">
 					Contact Details
 				</h1>
-				<div className="text-sm space-y-1.5 sm:ml-5">
+				<div className="text-sm text-green-800 space-y-1.5 sm:ml-5">
 					<p className="flex items-center">
 						<span>
-							<ImLocation className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-gray-500" />
+							<ImLocation className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-green-700" />
 						</span>
 						Ashaiman. Zenu - Block Factory
 					</p>
 					<p className="flex items-center">
 						<span>
-							<ImPhone className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-gray-500" />
+							<ImPhone className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-green-700" />
 						</span>
 						025 713 6081 | 025 718 1311
 					</p>
 					<p className="flex items-center">
 						<span>
-							<MdAccessTime className="w-5 h-5 mr-1 sm:mr-2 text-gray-500" />
+							<MdAccessTime className="w-5 h-5 mr-1 sm:mr-2 text-green-700" />
 						</span>
 						Service: Sun 8:00am - 11:30am
 					</p>
