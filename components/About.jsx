@@ -8,16 +8,16 @@ import question from '../public/assets/question.png';
 export const About = () => {
 	return (
 		<div className="min-h-[30vh] py-10 flex justify-center">
-			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl sm:grid grid-cols-4 gap-5 justify-center items-center mx-auto px-8 sm:px-0">
-				<div className="hidden sm:block space-y-5">
+			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl md:grid grid-cols-4 gap-5 justify-center items-center mx-auto px-8 sm:px-0">
+				<div className="hidden md:block space-y-5">
 					<Tag icon={pray} text={'Daily Prayers'} />
 					<Tag icon={bible} text={'Continuous Teaching'} />
 				</div>
 
-				<div className="flex flex-col items-center sm:col-span-2 text-center space-y-5">
+				<div className="flex flex-col items-center md:col-span-2 text-center space-y-5">
 					<div>
 						<h1 className="font-bold text-gray-600 uppercase">About</h1>
-						<h1 className="text-4xl font-bold sm:font-normal sm:text-yellow-300">
+						<h1 className="text-4xl font-bold md:font-normal sm:text-yellow-300">
 							Our Church
 						</h1>
 					</div>
@@ -35,7 +35,7 @@ export const About = () => {
 					</p>
 				</div>
 
-				<div className="hidden space-y-5 sm:flex flex-col justify-center items-center">
+				<div className="hidden space-y-5 md:flex flex-col justify-center items-center">
 					<Tag icon={question} text={'Community Helpers'} />
 					<Tag icon={church} text={'Set of Sermons'} />
 				</div>
