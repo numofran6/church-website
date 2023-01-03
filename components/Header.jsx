@@ -4,6 +4,7 @@ import React from 'react';
 import sky from '../public/assets/sky2.jpg';
 import styled from 'styled-components';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export const Header = () => {
 	const [active, setActive] = useState(false);
@@ -50,8 +51,8 @@ export const Header = () => {
 					</nav>
 				</div>
 
-				<div className="min-h-[35vh] sm:min-h-[40vh] flex flex-col justify-center items-center space-y-7  text-xl">
-					<h2 className="text-sm sm:text-lg text-gray-00">
+				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-7 text-xl">
+					<h2 className="text-sm sm:text-lg text-gray-400 mb-2">
 						There is no other way except Jesus
 					</h2>
 
@@ -59,6 +60,46 @@ export const Header = () => {
 						<h2>We love God.</h2>
 						<h2 className="hidden md:block">We believe in God.</h2>
 					</div>
+
+					{active && (
+						<>
+							<motion.div
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 1 }}
+								className="absolute top-0 bg-black w-full h-[41vh] flex flex-col space-y-6 uppercase items-center justify-center bg-opacity-90"
+							>
+								<Link
+									href={'#home'}
+									onClick={() => setActive(!active)}
+									className="btns"
+								>
+									Home
+								</Link>
+								<Link
+									href={'#about'}
+									onClick={() => setActive(!active)}
+									className="btns"
+								>
+									About
+								</Link>
+								<Link
+									href={'#contact'}
+									onClick={() => setActive(!active)}
+									className="btns"
+								>
+									Contact
+								</Link>
+								<Link
+									href={'#events'}
+									onClick={() => setActive(!active)}
+									className="btns"
+								>
+									Events
+								</Link>
+							</motion.div>
+						</>
+					)}
 				</div>
 			</div>
 		</div>
@@ -120,7 +161,7 @@ const Hamburger = styled.div`
 		span:nth-child(2) {
 			width: 70%;
 			transform: rotate(90deg);
-			bottom: 13px;
+			bottom: 13.5px;
 			background-color: #facc15;
 		}
 
