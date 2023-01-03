@@ -23,7 +23,7 @@ export const Contact = () => {
 					</p>
 					<p className="flex items-center">
 						<span>
-							<ImPhone className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-green-700" />
+							<ImPhone className="w-4 h-4 sm:h-4 sm:w-5 mr-1 sm:mr-2 text-green-700" />
 						</span>
 						025 713 6081 | 025 718 1311
 					</p>
