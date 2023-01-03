@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { About } from '../components/About';
 import { BibleVerse } from '../components/BibleVerse';
 import { Contact } from '../components/Contact';
@@ -7,6 +8,9 @@ import { Header } from '../components/Header';
 function Home() {
 	return (
 		<div>
+			<Head>
+				<title>Glorious Hill</title>
+			</Head>
 			<section id="home">
 				<Header />
 			</section>
