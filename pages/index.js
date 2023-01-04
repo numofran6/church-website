@@ -4,10 +4,15 @@ import { BibleVerse } from '../components/BibleVerse';
 import { Contact } from '../components/Contact';
 import { Events } from '../components/Events';
 import { Header } from '../components/Header';
+import { motion } from 'framer-motion';
 
 function Home() {
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 0.8 }}
+		>
 			<Head>
 				<title>Glorious Hill</title>
 			</Head>
@@ -28,7 +33,7 @@ function Home() {
 			<section id="events">
 				<Events />
 			</section>
-		</div>
+		</motion.div>
 	);
 }
 

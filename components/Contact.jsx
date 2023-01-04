@@ -1,19 +1,30 @@
 import { ImLocation, ImPhone } from 'react-icons/im';
 import { MdAccessTime } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 export const Contact = () => {
 	return (
-		<div className="grid grid-cols-3 w-full">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1 }}
+			className="grid grid-cols-3 w-full"
+		>
 			<div className="flex flex-col justify-center p-7 font-bold  text-[1rem] leading-[1.5rem] sm:text-xl bg-yellow-200 text-yellow-500 lg:pl-32">
-				<p>Love God.</p>
-				<p>Love People.</p>
-				<p>Influence the World.</p>
+				<p className="animate-pulse">Love God.</p>
+				<p className="animate-pulse">Love People.</p>
+				<p className="animate-pulse">Influence the World.</p>
 			</div>
 
 			<div className="col-span-2 p-4 sm:p-7 space-y-3 bg-green-200">
-				<h1 className="text-[2rem] sm:text-5xl font-bold text-green-600">
+				<motion.h1
+					initial={{ opacity: 0, y: 30 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8 }}
+					className="text-[2rem] sm:text-5xl font-bold text-green-600"
+				>
 					Contact Details
-				</h1>
+				</motion.h1>
 				<div className="text-sm text-green-800 space-y-1 sm:space-y-1.5 sm:ml-5">
 					<p className="flex items-center">
 						<span>
@@ -35,6 +46,6 @@ export const Contact = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

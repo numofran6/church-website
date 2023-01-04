@@ -4,19 +4,37 @@ import bible from '../public/assets/bible.png';
 import church from '../public/assets/church.png';
 import pray from '../public/assets/pray.png';
 import question from '../public/assets/question.png';
+import { motion } from 'framer-motion';
 
 export const About = () => {
 	return (
-		<div className="min-h-[30vh] py-10 flex justify-center">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1 }}
+			className="min-h-[30vh] py-10 flex justify-center"
+		>
 			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl md:grid grid-cols-4 gap-5 justify-center items-center mx-auto px-8 sm:px-0">
-				<div className="hidden md:block space-y-5">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="hidden md:block space-y-5"
+				>
 					<Tag icon={pray} text={'Daily Prayers'} />
 					<Tag icon={bible} text={'Continuous Teaching'} />
-				</div>
+				</motion.div>
 
 				<div className="flex flex-col items-center md:col-span-2 text-center space-y-5">
 					<div>
-						<h1 className="font-bold text-gray-600 uppercase">About</h1>
+						<motion.h1
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1.2 }}
+							className="font-bold text-gray-600 uppercase"
+						>
+							About
+						</motion.h1>
 						<h1 className="text-4xl font-bold md:font-normal sm:text-yellow-300">
 							Our Church
 						</h1>
@@ -35,11 +53,16 @@ export const About = () => {
 					</p>
 				</div>
 
-				<div className="hidden space-y-5 md:flex flex-col justify-center items-center">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="hidden space-y-5 md:flex flex-col justify-center items-center"
+				>
 					<Tag icon={question} text={'Community Helpers'} />
 					<Tag icon={church} text={'Set of Sermons'} />
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

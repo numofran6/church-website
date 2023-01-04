@@ -50,7 +50,7 @@ export const Header = () => {
 					</nav>
 				</div>
 
-				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-7 text-xl">
+				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-5 text-xl">
 					<h2 className="text-sm sm:text-lg text-gray-400 mb-2">
 						There is no other way except Jesus
 					</h2>
