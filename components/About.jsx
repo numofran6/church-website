@@ -31,7 +31,7 @@ export const About = () => {
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 1.2 }}
-							className="font-bold text-gray-600 uppercase"
+							className="font-bold text-gray-700 text-lg uppercase"
 						>
 							About
 						</motion.h1>
