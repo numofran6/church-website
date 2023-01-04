@@ -13,7 +13,7 @@ export const Events = () => {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
-			className="text-center p-5 flex flex-col items-center justify-center py-10 bg-stone-50"
+			className="text-center p-5 flex flex-col items-center justify-center py-10 bg-stone-100"
 		>
 			<h1 className="text-xl text-gray-600 uppercase font-bold tracking-wide sm:tracking-widest">
 				Upcoming Events
