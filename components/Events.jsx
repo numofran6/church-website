@@ -24,7 +24,7 @@ export const Events = () => {
 					<EventCard
 						serviceName={'Monday Prayers'}
 						day="Monday"
-						time={'8:00am - 9:00am'}
+						time={'8am - 9am'}
 					/>
 				</motion.div>
 
@@ -36,7 +36,7 @@ export const Events = () => {
 					<EventCard
 						serviceName={'Wednesday Prayers'}
 						day="Wednesday"
-						time={'7:00pm - 9:00pm'}
+						time={'7pm - 9pm'}
 					/>
 				</motion.div>
 
@@ -48,7 +48,7 @@ export const Events = () => {
 					<EventCard
 						serviceName={'Dominion Encounter'}
 						day="Thursday"
-						time={'7:00pm - 8:00pm'}
+						time={'7pm - 8:30pm'}
 					/>
 				</motion.div>
 
@@ -60,7 +60,7 @@ export const Events = () => {
 					<EventCard
 						serviceName={'Main Service'}
 						day="Sunday"
-						time={'8:00am - 11:30am'}
+						time={'8am - 11:30am'}
 						className="hidden md:block"
 					/>
 				</motion.div>
