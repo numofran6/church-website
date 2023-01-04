@@ -2,6 +2,10 @@ import { Button } from '@mui/material';
 import React from 'react';
 import { EventCard } from './EventCard';
 import { motion } from 'framer-motion';
+import prayer from '../public/assets/prayer.png';
+import prayer1 from '../public/assets/prayer1.png';
+import prayer2 from '../public/assets/prayer2.png';
+import prayer3 from '../public/assets/prayer3.png';
 
 export const Events = () => {
 	return (
@@ -15,7 +19,7 @@ export const Events = () => {
 				Upcoming Events
 			</h1>
 
-			<div className="mt-5 flex space-x-1 sm:space-x-14">
+			<div className="mt-5 flex space-x-1 sm:space-x-14 items-center">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -25,6 +29,7 @@ export const Events = () => {
 						serviceName={'Monday Prayers'}
 						day="Monday"
 						time={'8am - 9am'}
+						icon={prayer2}
 					/>
 				</motion.div>
 
@@ -37,6 +42,7 @@ export const Events = () => {
 						serviceName={'Wednesday Prayers'}
 						day="Wednesday"
 						time={'7pm - 9pm'}
+						icon={prayer}
 					/>
 				</motion.div>
 
@@ -49,6 +55,7 @@ export const Events = () => {
 						serviceName={'Dominion Encounter'}
 						day="Thursday"
 						time={'7pm - 8:30pm'}
+						icon={prayer1}
 					/>
 				</motion.div>
 
@@ -61,6 +68,7 @@ export const Events = () => {
 						serviceName={'Main Service'}
 						day="Sunday"
 						time={'8am - 11:30am'}
+						icon={prayer3}
 						className="hidden md:block"
 					/>
 				</motion.div>
