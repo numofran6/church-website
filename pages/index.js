@@ -11,7 +11,7 @@ function Home() {
 			<Head>
 				<title>Glorious Hill</title>
 			</Head>
-			<section id="home">
+			<section id="home" className="bg-slate-500">
 				<Header />
 			</section>
 

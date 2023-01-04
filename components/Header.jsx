@@ -9,7 +9,6 @@ import { motion } from 'framer-motion';
 export const Header = () => {
 	const [active, setActive] = useState(false);
 
-	console.log(active);
 	return (
 		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
 			<Image
