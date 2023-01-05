@@ -154,14 +154,14 @@ const Hamburger = styled.div`
 		span:nth-child(1) {
 			width: 70%;
 			transform: translateY(4px);
-			background-color: #facc15;
+			background-color: #fbbf24;
 		}
 
 		span:nth-child(2) {
 			width: 70%;
 			transform: rotate(90deg);
 			bottom: 13.5px;
-			background-color: #facc15;
+			background-color: #fbbf24;
 		}
 
 		span:nth-child(3) {

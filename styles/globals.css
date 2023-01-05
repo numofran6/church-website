@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btns {
-	@apply text-amber-600 sm:text-amber-500 active:scale-100 active:text-yellow-500 hover:scale-125 hover:text-[#ffff] transition duration-300 ease-out;
+	@apply text-amber-400 sm:text-amber-500 active:scale-100 active:text-yellow-500 hover:scale-125 hover:text-[#ffff] transition duration-300 ease-out;
 }
