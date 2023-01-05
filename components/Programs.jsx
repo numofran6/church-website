@@ -12,7 +12,7 @@ export const Programs = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="text-center p-5 flex flex-col items-center justify-center py-12 bg-stone-100"
 		>
 			<h1 className="text-xl text-gray-600 uppercase font-bold tracking-wide sm:tracking-widest">

@@ -17,7 +17,7 @@ export const Contact = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="w-full grid grid-cols-3 h-[30vh] sm:h-[35vh]"
 		>
 			<div className="relative h-full w-full">

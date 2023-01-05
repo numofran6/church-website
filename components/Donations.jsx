@@ -6,7 +6,7 @@ export const Donations = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="h-[35vh] bg-stone-100 flex justify-center text-center"
 		>
 			<div className="flex h-full max-w-lg md:max-w-2xl  flex-col items-center justify-center space-y-5">

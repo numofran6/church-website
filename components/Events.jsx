@@ -10,7 +10,7 @@ export const Events = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="h-[30vh] sm:h-[35vh] flex flex-col items-center bg-stone-100 justify-center space-y-5"
 		>
 			<h1 className="font-bold uppercase text-lg md:text-xl">Events</h1>

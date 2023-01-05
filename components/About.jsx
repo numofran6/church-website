@@ -11,7 +11,7 @@ export const About = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="min-h-[30vh] py-10 flex justify-center"
 		>
 			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl md:grid grid-cols-4 justify-center items-center mx-auto px-8 sm:px-0">

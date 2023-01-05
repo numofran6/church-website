@@ -14,11 +14,7 @@ import { Footer } from '../components/Footer';
 
 function Home() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
-		>
+		<div>
 			<Head>
 				<title>Glorious Hill</title>
 			</Head>
@@ -66,7 +62,7 @@ function Home() {
 			<footer>
 				<Footer />
 			</footer>
-		</motion.div>
+		</div>
 	);
 }
 

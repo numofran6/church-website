@@ -8,7 +8,7 @@ export const AboutPastor = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="h-[40vh] relative bg-stone-800 text-white"
 		>
 			<Image src={pastor} alt="" className="h-[40vh] w-[100vw] object-cover" />

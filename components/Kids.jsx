@@ -7,7 +7,7 @@ export const Kids = () => {
 		<motion.div
 			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.5 }}
 			className="h-[30vh] sm:h-[40vh] relative text-white"
 		>
 			<Image
