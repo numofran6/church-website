@@ -71,7 +71,7 @@ export const Header = () => {
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								transition={{ duration: 1 }}
-								className="absolute top-0 bg-black w-full h-[41vh] flex flex-col space-y-6 uppercase items-center justify-center bg-opacity-90"
+								className="absolute top-0 bg-yellow-100 w-full h-[41vh] flex flex-col space-y-6 uppercase items-center justify-center"
 							>
 								<Link
 									href={'#home'}
