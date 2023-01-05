@@ -1,85 +1,60 @@
-import { Button } from '@mui/material';
-import React from 'react';
-import { EventCard } from './EventCard';
 import { motion } from 'framer-motion';
-import prayer from '../public/assets/prayer.png';
-import prayer1 from '../public/assets/prayer1.png';
-import prayer2 from '../public/assets/prayer2.png';
-import prayer3 from '../public/assets/prayer3.png';
+import Image from 'next/image';
+import event1 from '../public/assets/event1.jpg';
+import event2 from '../public/assets/event2.png';
+import event3 from '../public/assets/event3.jpg';
+import event4 from '../public/assets/event4.jpg';
 
 export const Events = () => {
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
+			initial={{ opacity: 0.5 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ duration: 1 }}
-			className="text-center p-5 flex flex-col items-center justify-center py-10 bg-stone-100"
+			transition={{ duration: 0.8 }}
+			className="h-[30vh] sm:h-[35vh] flex flex-col items-center bg-stone-100 justify-center space-y-5"
 		>
-			<h1 className="text-xl text-gray-600 uppercase font-bold tracking-wide sm:tracking-widest">
-				Upcoming Events
-			</h1>
+			<h1 className="font-bold uppercase text-lg md:text-xl">Events</h1>
 
-			<div className="mt-5 flex space-x-1 sm:space-x-14 items-center">
+			<div className="flex space-x-2 sm:space-x-4 cursor-pointer">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.4 }}
+					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-emerald-300 hover:scale-105  transition duration-500 ease-out"
 				>
-					<EventCard
-						serviceName={'Monday Prayers'}
-						day="Monday"
-						time={'8am - 9am'}
-						icon={prayer2}
-					/>
+					<Image src={event1} alt="Event 1" className="w-full h-full" />
 				</motion.div>
 
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
+					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-emerald-300 hover:scale-105 flex flex-col justify-center  transition duration-500 ease-out"
 				>
-					<EventCard
-						serviceName={'Wednesday Prayers'}
-						day="Wednesday"
-						time={'7pm - 9pm'}
-						icon={prayer}
-					/>
+					<Image src={event2} alt="Event 2" className="" />
 				</motion.div>
 
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
+					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-gray-300 hover:scale-105  transition duration-500 ease-out"
 				>
-					<EventCard
-						serviceName={'Dominion Encounter'}
-						day="Thursday"
-						time={'7pm - 8:30pm'}
-						icon={prayer1}
-					/>
+					<Image src={event3} alt="Event 3" className="w-full h-full" />
 				</motion.div>
 
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
+					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-stone-600 relative hover:scale-105  transition duration-500 ease-out"
 				>
-					<EventCard
-						serviceName={'Main Service'}
-						day="Sunday"
-						time={'8am - 11:30am'}
-						icon={prayer3}
-						className="hidden md:block"
-					/>
-				</motion.div>
-			</div>
+					<Image src={event4} alt="Event 4" className="w-full h-full" />
 
-			<div className="text-gray-600 sm:text-gray-700 space-y-2 text-xs sm:text-sm mt-10">
-				<p className="text-center">
-					It is a privilege to give back to God what He has graciously given. We
-					commit to being good stewards of your generosity
-				</p>
-				<Button variant="text">Give Online</Button>
+					<h1 className="absolute h-full top-0 justify-center flex flex-col font-bold text-white text-xs sm:text-lg uppercase tracking-widest text-center w-full">
+						<span className="bg-green-200/40 py-2">Worship</span>
+					</h1>
+				</motion.div>
 			</div>
 		</motion.div>
 	);
