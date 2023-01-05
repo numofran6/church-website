@@ -30,7 +30,7 @@ export const AboutPastor = () => {
 					</p>
 
 					<Button
-						variant="outlined"
+						variant="contained"
 						sx={{ width: 'fit-content', fontWeight: 'bold' }}
 						size="small"
 					>

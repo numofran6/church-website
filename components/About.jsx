@@ -52,7 +52,7 @@ export const About = () => {
 						<Tag
 							icon={pray}
 							text={'Daily Prayers'}
-							style="w-40 sm:w-44 h-28 bg-stone-100"
+							style="w-40 sm:w-44 h-32 bg-stone-100"
 						/>
 						<Tag
 							icon={bible}
@@ -75,7 +75,7 @@ export const About = () => {
 						<Tag
 							icon={church}
 							text={'Set of Sermons'}
-							style={'w-40 sm:w-44 h-28 bg-stone-100'}
+							style={'w-40 sm:w-44 h-32 bg-stone-100'}
 						/>
 					</motion.div>
 				</div>

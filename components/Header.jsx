@@ -5,6 +5,7 @@ import sky from '../public/assets/sky2.jpg';
 import styled from 'styled-components';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 export const Header = () => {
 	const [active, setActive] = useState(false);
@@ -109,6 +110,8 @@ export const Header = () => {
 		</motion.div>
 	);
 };
+
+export default dynamic(() => Promise.resolve(Header), { ssr: false });
 
 const Hamburger = styled.div`
 	display: flex;

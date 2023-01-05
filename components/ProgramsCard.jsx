@@ -3,7 +3,9 @@ import React from 'react';
 
 export const ProgramsCard = ({ day, icon, time, serviceName, style }) => {
 	return (
-		<div className={`flex flex-col items-center ${style}`}>
+		<div
+			className={`flex flex-col  sm:hover:scale-110 transition duration-500 cursor-pointer ease-in-out items-center ${style}`}
+		>
 			<Image
 				src={icon}
 				alt=""

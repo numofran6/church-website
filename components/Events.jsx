@@ -20,7 +20,7 @@ export const Events = () => {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.4 }}
-					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-emerald-300 hover:scale-105  transition duration-500 ease-out"
+					className="w-20 h-[4.5rem] sm:w-36 sm:h-32 bg-emerald-300 hover:scale-105  transition duration-500 ease-out"
 				>
 					<Image src={event1} alt="Event 1" className="w-full h-full" />
 				</motion.div>
@@ -29,7 +29,7 @@ export const Events = () => {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-emerald-300 hover:scale-105 flex flex-col justify-center  transition duration-500 ease-out"
+					className="w-20 h-[4.5rem] sm:w-36 sm:h-32 bg-emerald-300 hover:scale-105 flex flex-col justify-center transition duration-500 ease-out"
 				>
 					<Image src={event2} alt="Event 2" className="" />
 				</motion.div>
@@ -38,7 +38,7 @@ export const Events = () => {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
-					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-gray-300 hover:scale-105  transition duration-500 ease-out"
+					className="w-20 h-[4.5rem] sm:w-36 sm:h-32 bg-gray-300 hover:scale-105 transition duration-500 ease-out"
 				>
 					<Image src={event3} alt="Event 3" className="w-full h-full" />
 				</motion.div>
@@ -47,7 +47,7 @@ export const Events = () => {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
-					className="w-20 h-[4.5rem] sm:w-32 sm:h-28 bg-stone-600 relative hover:scale-105  transition duration-500 ease-out"
+					className="w-20 h-[4.5rem] sm:w-36 sm:h-32 bg-stone-600 relative hover:scale-110 transition duration-500 ease-out"
 				>
 					<Image src={event4} alt="Event 4" className="w-full h-full" />
 

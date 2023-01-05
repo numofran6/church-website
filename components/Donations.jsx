@@ -19,7 +19,7 @@ export const Donations = () => {
 					commit to being good stewards of your generosity.
 				</h1>
 
-				<Button variant="outlined" size="small">
+				<Button variant="contained" size="small">
 					DONATE
 				</Button>
 			</div>
