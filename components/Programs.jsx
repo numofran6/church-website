@@ -9,12 +9,7 @@ import prayer3 from '../public/assets/prayer3.png';
 
 export const Programs = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0.5 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			className="text-center p-5 flex flex-col items-center justify-center py-12 bg-stone-100"
-		>
+		<div className="text-center p-5 flex flex-col items-center justify-center py-12 bg-stone-100">
 			<h1 className="text-xl text-gray-600 uppercase font-bold tracking-wide sm:tracking-widest">
 				WEEKLY PROGRAMS
 			</h1>
@@ -73,6 +68,6 @@ export const Programs = () => {
 					/>
 				</motion.div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };

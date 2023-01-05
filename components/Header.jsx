@@ -11,12 +11,7 @@ export const Header = () => {
 	const [active, setActive] = useState(false);
 
 	return (
-		<motion.div
-			initial={{ opacity: 0.5 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative"
-		>
+		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
 			<Image
 				src={sky}
 				width={3950}
@@ -107,7 +102,7 @@ export const Header = () => {
 					)}
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };
 

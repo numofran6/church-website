@@ -7,12 +7,7 @@ import event4 from '../public/assets/event4.jpg';
 
 export const Events = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0.5 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			className="h-[30vh] sm:h-[35vh] flex flex-col items-center bg-stone-100 justify-center space-y-5"
-		>
+		<div className="h-[30vh] sm:h-[35vh] flex flex-col items-center bg-stone-100 justify-center space-y-5">
 			<h1 className="font-bold uppercase text-lg md:text-xl">Events</h1>
 
 			<div className="flex space-x-2 sm:space-x-4 cursor-pointer">
@@ -56,6 +51,6 @@ export const Events = () => {
 					</h1>
 				</motion.div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };
