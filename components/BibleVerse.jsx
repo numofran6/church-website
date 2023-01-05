@@ -16,10 +16,7 @@ export const BibleVerse = () => {
 			</motion.h1>
 
 			<motion.p className="italic text-[0.6rem] sm:text-xs flex items-center justify-center ">
-				<span className="flex items-center mr-2 font-bold">
-					<Image src={bible} alt="Bible" className="w-5 h-5 mr-1" /> Psalm 71:7
-					-
-				</span>
+				<span className="flex items-center mr-2 font-bold">Psalm 71:7 -</span>
 				<span>I am as a wonder unto many; but thou art my strong refuge.</span>
 			</motion.p>
 		</motion.div>
