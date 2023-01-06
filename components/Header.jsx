@@ -11,15 +11,26 @@ export const Header = () => {
 	const [active, setActive] = useState(false);
 
 	return (
-		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
-			<Image
-				src={sky}
-				width={3950}
-				height={4937}
-				alt="Header"
-				className="w-[100vw] h-[50vh] sm:h-[60vh] object-cover"
-				priority
-			/>
+		<motion.div
+			initial={{ opacity: 0.5 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 0.5 }}
+			className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative"
+		>
+			<motion.div
+				initial={{ opacity: 0.5 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 0.5 }}
+			>
+				<Image
+					src={sky}
+					width={3950}
+					height={4937}
+					alt="Header"
+					className="w-[100vw] h-[50vh] sm:h-[60vh] object-cover"
+					priority
+				/>
+			</motion.div>
 
 			<div className="absolute top-0 w-full text-white">
 				<div className="bg-opacity-20 md:bg-opacity-10 bg-gray-200">
@@ -102,7 +113,7 @@ export const Header = () => {
 					)}
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
