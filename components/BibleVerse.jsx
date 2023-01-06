@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React from 'react';
-import bible from '../public/assets/prayerss.png';
 
 export const BibleVerse = () => {
 	return (
