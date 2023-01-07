@@ -16,8 +16,8 @@ export const Programs = () => {
 
 			<div className="mt-5 flex space-x-1 sm:space-x-14 items-center justify-center">
 				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ y: 50 }}
+					whileInView={{ y: 0 }}
 					transition={{ duration: 0.4 }}
 				>
 					<ProgramsCard
@@ -29,8 +29,8 @@ export const Programs = () => {
 				</motion.div>
 
 				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ y: 50 }}
+					whileInView={{ y: 0 }}
 					transition={{ duration: 0.6 }}
 				>
 					<ProgramsCard
@@ -42,8 +42,8 @@ export const Programs = () => {
 				</motion.div>
 
 				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ y: 50 }}
+					whileInView={{ y: 0 }}
 					transition={{ duration: 0.8 }}
 				>
 					<ProgramsCard
@@ -55,8 +55,8 @@ export const Programs = () => {
 				</motion.div>
 
 				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ y: 50 }}
+					whileInView={{ y: 0 }}
 					transition={{ duration: 1 }}
 				>
 					<ProgramsCard
