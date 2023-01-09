@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import sky from '../public/assets/sky2.jpg';
-import styled from 'styled-components';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import dynamic from 'next/dynamic';
+import { RiMenu4Line } from 'react-icons/ri';
+import { TfiClose } from 'react-icons/tfi';
 
 export const Header = () => {
 	const [active, setActive] = useState(false);
@@ -52,13 +52,20 @@ export const Header = () => {
 							</Link>
 						</div>
 
-						<Hamburger onClick={() => setActive(!active)}>
-							<div className={`hamburger-icon ${active ? 'active' : ''}`}>
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</Hamburger>
+						<div className="md:hidden">
+							{!active && (
+								<RiMenu4Line
+									onClick={() => setActive(!active)}
+									className="w-8 h-8"
+								/>
+							)}
+							{active && (
+								<TfiClose
+									onClick={() => setActive(!active)}
+									className="w-8 h-8"
+								/>
+							)}
+						</div>
 					</nav>
 				</div>
 
@@ -116,71 +123,3 @@ export const Header = () => {
 		</motion.div>
 	);
 };
-
-export default dynamic(() => Promise.resolve(Header), { ssr: false });
-
-const Hamburger = styled.div`
-	display: flex;
-	transition: 0.5s;
-	cursor: pointer;
-	height: 20px;
-	justify-content: center;
-	margin-right: 5px;
-	@media (min-width: 768px) {
-		display: none;
-	}
-	.hamburger-icon {
-		position: relative;
-		width: 45px;
-		display: flex;
-		align-items: center;
-		transform: rotate(0);
-		transition: 1s;
-		span {
-			position: absolute;
-			display: block;
-			width: 100%;
-			height: 2px;
-			border-radius: 50px;
-			background-color: white;
-			transition: 0.5s;
-		}
-		span:nth-child(1) {
-			top: 0;
-			left: 0;
-			width: 50%;
-			transform: translateY(0);
-		}
-		span:nth-child(2) {
-			width: 100%;
-			transform: scaleX(1);
-			opacity: 1;
-		}
-		span:nth-child(3) {
-			bottom: 0;
-			right: 0;
-			width: 50%;
-			transform: rotate(0);
-		}
-	}
-	.active {
-		transform: rotate(315deg);
-		span:nth-child(1) {
-			width: 70%;
-			transform: translateY(4px);
-			background-color: #fbbf24;
-		}
-
-		span:nth-child(2) {
-			width: 70%;
-			transform: rotate(90deg);
-			bottom: 13.5px;
-			background-color: #fbbf24;
-		}
-
-		span:nth-child(3) {
-			transform: scaleX(0);
-			opacity: 0;
-		}
-	}
-`;

@@ -22,15 +22,13 @@ export const Events = () => {
 
 			<Swipe>
 				{events.map((event, i) => (
-					<React.Fragment key={i}>
-						<SwiperSlide className="rounded-lg">
-							<Image
-								src={event}
-								alt="Event"
-								className="w-full h-full rounded-lg"
-							/>
-						</SwiperSlide>
-					</React.Fragment>
+					<SwiperSlide className="rounded-lg" key={i}>
+						<Image
+							src={event}
+							alt="Event"
+							className="w-full h-full rounded-lg"
+						/>
+					</SwiperSlide>
 				))}
 			</Swipe>
 		</motion.div>
