@@ -1,5 +1,3 @@
-import { Button } from '@mui/material';
-import React from 'react';
 import { ProgramsCard } from './ProgramsCard';
 import { motion } from 'framer-motion';
 import prayer from '../public/assets/prayer.png';
@@ -18,7 +16,7 @@ export const Programs = () => {
 				<div className="mt-5 flex space-x-5 sm:space-x-14 items-center justify-center">
 					<motion.div
 						initial={{ y: 50 }}
-						whileInView={{ y: 0 }}
+						animate={{ y: 0 }}
 						transition={{ duration: 0.4 }}
 					>
 						<ProgramsCard
@@ -31,7 +29,7 @@ export const Programs = () => {
 
 					<motion.div
 						initial={{ y: 50 }}
-						whileInView={{ y: 0 }}
+						animate={{ y: 0 }}
 						transition={{ duration: 0.6 }}
 					>
 						<ProgramsCard
@@ -44,7 +42,7 @@ export const Programs = () => {
 
 					<motion.div
 						initial={{ y: 50 }}
-						whileInView={{ y: 0 }}
+						animate={{ y: 0 }}
 						transition={{ duration: 0.8 }}
 					>
 						<ProgramsCard
@@ -57,7 +55,7 @@ export const Programs = () => {
 
 					<motion.div
 						initial={{ y: 50 }}
-						whileInView={{ y: 0 }}
+						animate={{ y: 0 }}
 						transition={{ duration: 1 }}
 					>
 						<ProgramsCard
