@@ -14,12 +14,7 @@ import Image from 'next/image';
 
 export const Contact = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0.5 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			className="w-full grid grid-cols-3 h-[30vh] sm:h-[35vh]"
-		>
+		<div className="w-full md:grid md:grid-cols-3">
 			<div className="relative h-full w-full">
 				<Image
 					src={getInTouch}
@@ -44,7 +39,7 @@ export const Contact = () => {
 				</div>
 			</div>
 
-			<div className="p-4 sm:ml-10 sm:p-7 space-y-10 col-span-2 flex flex-col justify-center">
+			<div className="p-4 sm:ml-10 sm:p-7 space-y-10 md:col-span-2 flex flex-col justify-center">
 				<div className="text-sm text-gray-700 space-y-2">
 					<p className="flex items-center text-xs sm:text-sm">
 						<span>
@@ -81,6 +76,6 @@ export const Contact = () => {
 					</span>
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };

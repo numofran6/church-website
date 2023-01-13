@@ -11,16 +11,11 @@ export const Header = () => {
 	const [active, setActive] = useState(false);
 
 	return (
-		<motion.div
-			initial={{ opacity: 0.5 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
-			className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative"
-		>
+		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
 			<motion.div
-				initial={{ opacity: 0.5 }}
+				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 0.5 }}
+				end={{ opacity: 0 }}
 			>
 				<Image
 					src={sky}
@@ -34,8 +29,8 @@ export const Header = () => {
 
 			<div className="absolute top-0 w-full text-white">
 				<div className="bg-opacity-20 md:bg-opacity-10 bg-gray-200">
-					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 sm:px-0">
-						<h1 className="text-lg font-bold">GLORIOUS HILL MINISTRIES</h1>
+					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5">
+						<h1 className="sm:text-lg font-bold">GLORIOUS HILL MINISTRIES</h1>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'#home'} className="btns">
@@ -120,6 +115,6 @@ export const Header = () => {
 					)}
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };

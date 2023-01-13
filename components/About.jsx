@@ -9,8 +9,8 @@ import { motion } from 'framer-motion';
 export const About = () => {
 	return (
 		<div className="min-h-[30vh] py-10 flex justify-center">
-			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl md:grid grid-cols-4 justify-center items-center mx-auto px-8 sm:px-0">
-				<div className="flex flex-col items-center md:items-start md:col-span-2 text-center md:text-left space-y-5">
+			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl lg:grid grid-cols-4 justify-center items-center mx-auto px-8 lg:px-0">
+				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left space-y-5">
 					<div>
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ export const About = () => {
 						Our mission is to spread the Word of God and the Good News
 					</p>
 
-					<p className="text-sm text-justify text-gray-500">
+					<p className="text-sm text-justify text-gray-500 ">
 						We have a strong sense of community. People and children of all ages
 						here are encouraged to learn about their own faith and the role of
 						the church in our community and worldwide. We invite anyone and
@@ -37,12 +37,12 @@ export const About = () => {
 					</p>
 				</div>
 
-				<div className="md:col-span-2 mt-10 md:mt-0 space-y-2">
+				<div className="lg:col-span-2 mt-10 lg:mt-0 space-y-2">
 					<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1 }}
-						className="flex space-x-2 items-end justify-center md:justify-end"
+						className="flex space-x-2 items-end justify-center lg:justify-end"
 					>
 						<Tag
 							icon={pray}
@@ -60,7 +60,7 @@ export const About = () => {
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1 }}
-						className="flex space-x-2 items-start justify-center md:justify-end"
+						className="flex space-x-2 items-start justify-center lg:justify-end"
 					>
 						<Tag
 							icon={question}

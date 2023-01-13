@@ -1,13 +1,12 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import youth from '../public/assets/youth.jpg';
+import { motion } from 'framer-motion';
 
 export const Youth = () => {
 	return (
 		<motion.div
-			initial={{ opacity: 0.5 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 0.5 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
 			className="h-[30vh] sm:h-[40vh] relative text-white"
 		>
 			<Image
@@ -17,7 +16,7 @@ export const Youth = () => {
 			/>
 
 			<div className="absolute top-0 bg-emerald-700/70 h-full w-full text-center">
-				<div className="mr-5 sm:mr-10 md:mr-28 absolute right-0 max-w-[12rem] sm:max-w-xs md:max-w-lg h-full flex flex-col justify-center space-y-5 items-center">
+				<div className="mr-5 sm:mr-10 lg:mr-28 absolute right-0 max-w-[12rem] sm:max-w-xs lg:max-w-lg h-full flex flex-col justify-center space-y-5 items-center">
 					<h1 className="font-bold uppercase text-xl md:text-4xl">
 						Youth of Integrity
 					</h1>

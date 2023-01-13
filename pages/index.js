@@ -10,10 +10,15 @@ import { Kids } from '../components/Kids';
 import { Youth } from '../components/Youth';
 import { Donations } from '../components/Donations';
 import { Footer } from '../components/Footer';
+import { motion } from 'framer-motion';
 
 function Home() {
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			className="overflow-auto"
+		>
 			<Head>
 				<title>Glorious Hill</title>
 			</Head>
@@ -61,7 +66,7 @@ function Home() {
 			<footer>
 				<Footer />
 			</footer>
-		</div>
+		</motion.div>
 	);
 }
 
