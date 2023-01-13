@@ -21,7 +21,7 @@ export const Youth = () => {
 						Youth of Integrity
 					</h1>
 
-					<p className="text-gray-100 text-xs sm:text-[1rem] sm:leading-[1.2rem] text-center">
+					<p className="text-gray-100 text-xs sm:text-md sm:leading-[1.2rem] text-center">
 						We believe in the next generation because they are the future of the
 						church. They congregate weekly to grow their faith and connect with
 						students their age to help one another.
