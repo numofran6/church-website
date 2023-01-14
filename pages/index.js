@@ -11,6 +11,7 @@ import { Youth } from '../components/Youth';
 import { Donations } from '../components/Donations';
 import { Footer } from '../components/Footer';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 function Home() {
 	return (
@@ -70,4 +71,6 @@ function Home() {
 	);
 }
 
-export default Home;
+// export default Home;
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false });
