@@ -38,23 +38,19 @@ function Home() {
 			<motion.section
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
+				transition={{ duration: 0.7 }}
 			>
 				<AboutPastor />
 			</motion.section>
 
-			<motion.section
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
-			>
+			<section>
 				<Programs />
-			</motion.section>
+			</section>
 
 			<motion.section
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
+				transition={{ duration: 0.7 }}
 			>
 				<Kids />
 			</motion.section>
@@ -62,23 +58,19 @@ function Home() {
 			<motion.section
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
+				transition={{ duration: 0.7 }}
 			>
 				<Youth />
 			</motion.section>
 
-			<motion.section
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
-			>
+			<section>
 				<Donations />
-			</motion.section>
+			</section>
 
 			<motion.section
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				end={{ opacity: 0 }}
+				transition={{ duration: 0.7 }}
 				id="contact"
 			>
 				<Contact />

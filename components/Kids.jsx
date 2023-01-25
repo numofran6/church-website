@@ -10,7 +10,7 @@ export const Kids = () => {
 				className="h-[30vh] sm:h-[40vh] w-[100vw] object-cover"
 			/>
 
-			<div className="absolute top-0 bg-orange-700/80 h-full w-full">
+			<div className="absolute top-0 bg-orange-700/70 h-full w-full">
 				<div className="max-w-[12rem] sm:max-w-xs lg:max-w-lg ml-5 sm:ml-10 lg:ml-28 h-full flex flex-col justify-center space-y-5 items-center">
 					<h1 className="font-bold uppercase text-xl md:text-4xl">kids</h1>
 
