@@ -9,8 +9,8 @@ import { motion } from 'framer-motion';
 export const About = () => {
 	return (
 		<div className="min-h-[30vh] py-10 flex justify-center">
-			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl lg:grid grid-cols-4 justify-center items-center mx-auto px-8 lg:px-0">
-				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left space-y-5">
+			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl lg:grid grid-cols-4 justify-center items-center mx-auto lg:px-10">
+				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left space-y-5 px-8 lg:px-0">
 					<div>
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
@@ -47,12 +47,12 @@ export const About = () => {
 						<Tag
 							icon={pray}
 							text={'Daily Prayers'}
-							style="w-40 sm:w-44 h-32 bg-stone-100"
+							style="w-36 sm:w-44 h-32 bg-stone-100"
 						/>
 						<Tag
 							icon={bible}
 							text={'Continuous Teaching'}
-							style={'w-40 sm:w-44 h-44 bg-stone-300'}
+							style={'w-36 sm:w-44 h-44 bg-stone-300'}
 						/>
 					</motion.div>
 
@@ -65,12 +65,12 @@ export const About = () => {
 						<Tag
 							icon={question}
 							text={'Community Helpers'}
-							style={'w-40 sm:w-44 h-44 bg-stone-300'}
+							style={'w-36 sm:w-44 h-44 bg-stone-300'}
 						/>
 						<Tag
 							icon={church}
 							text={'Set of Sermons'}
-							style={'w-40 sm:w-44 h-32 bg-stone-100'}
+							style={'w-36 sm:w-44 h-32 bg-stone-100'}
 						/>
 					</motion.div>
 				</div>

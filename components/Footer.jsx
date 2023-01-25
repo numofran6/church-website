@@ -4,10 +4,10 @@ import { BiUpArrowCircle } from 'react-icons/bi';
 
 export const Footer = () => {
 	return (
-		<div className="text-center py-5 bg-stone-100">
+		<div className="flex flex-col items-center justify-center space-y-2 py-7 bg-stone-100">
 			<Link
 				href={'#home'}
-				className=" hover:text-amber-500 text-black transition duration-300 ease-out flex items-center justify-center"
+				className=" hover:text-amber-500 text-black transition duration-300 ease-out"
 			>
 				<BiUpArrowCircle className="w-8 h-8" />
 			</Link>

@@ -1,14 +1,9 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import kids from '../public/assets/kids.jpg';
 
 export const Kids = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			className="h-[30vh] sm:h-[40vh] relative text-white"
-		>
+		<div className="h-[30vh] sm:h-[40vh] relative text-white">
 			<Image
 				src={kids}
 				alt=""
@@ -26,6 +21,6 @@ export const Kids = () => {
 					</p>
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };

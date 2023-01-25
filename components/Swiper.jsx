@@ -19,7 +19,7 @@ export const Swipe = ({ children }) => {
 			slidesPerView={1}
 			navigation={true}
 			pagination={{ clickable: true }}
-			className="w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-full flex items-center justify-center shadow-xl rounded-lg"
+			className="w-[80%] sm:w-[50%] h-full flex items-center justify-center shadow-xl"
 		>
 			{children}
 		</Swiper>

@@ -1,31 +1,64 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import sky from '../public/assets/sky2.jpg';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { RiMenu4Line } from 'react-icons/ri';
 import { TfiClose } from 'react-icons/tfi';
 
+const list = {
+	visible: {
+		opacity: 1,
+		transition: {
+			when: 'beforeChildren',
+			staggerChildren: 0.3,
+		},
+	},
+	hidden: {
+		opacity: 0,
+		transition: {
+			when: 'afterChildren',
+		},
+	},
+};
+
+const item = {
+	visible: { opacity: 1, y: 0 },
+	hidden: { opacity: 0, y: 100 },
+};
+
 export const Header = () => {
 	const [active, setActive] = useState(false);
+	const wrapperRef = useRef(null);
+
+	useEffect(() => {
+		/**
+		 * Alert if clicked on outside of element
+		 */
+		function handleClickOutside(event) {
+			if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+				setActive(false);
+			}
+		}
+		// Bind the event listener
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			// Unbind the event listener on clean up
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [wrapperRef]);
 
 	return (
 		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				end={{ opacity: 0 }}
-			>
-				<Image
-					src={sky}
-					width={3950}
-					height={4937}
-					alt="Header"
-					className="w-[100vw] h-[50vh] sm:h-[60vh] object-cover"
-					priority
-				/>
-			</motion.div>
+			<Image
+				src={sky}
+				width={3950}
+				height={4937}
+				alt="Header"
+				className="w-[100vw] h-[50vh] sm:h-[60vh] object-cover"
+				priority
+			/>
 
 			<div className="absolute top-0 w-full text-white">
 				<div className="bg-opacity-20 md:bg-opacity-10 bg-gray-200">
@@ -77,39 +110,51 @@ export const Header = () => {
 					{active && (
 						<>
 							<motion.div
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{ duration: 1 }}
-								className="absolute top-0 bg-yellow-100 w-full h-[41vh] flex flex-col space-y-6 uppercase items-center justify-center"
+								initial="hidden"
+								animate="visible"
+								variants={list}
+								ref={wrapperRef}
+								className="absolute top-0 bg-yellow-100 w-full h-[41vh] md:hidden text-sm flex flex-col space-y-5 uppercase items-center justify-center font-bold"
 							>
-								<Link
-									href={'#home'}
-									onClick={() => setActive(!active)}
-									className="btns"
-								>
-									Home
-								</Link>
-								<Link
-									href={'#about'}
-									onClick={() => setActive(!active)}
-									className="btns"
-								>
-									About
-								</Link>
-								<Link
-									href={'#contact'}
-									onClick={() => setActive(!active)}
-									className="btns"
-								>
-									Contact
-								</Link>
-								<Link
-									href={'#events'}
-									onClick={() => setActive(!active)}
-									className="btns"
-								>
-									Events
-								</Link>
+								<motion.div variants={item}>
+									<Link
+										href={'#home'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										Home
+									</Link>
+								</motion.div>
+
+								<motion.div variants={item}>
+									<Link
+										href={'#about'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										About
+									</Link>
+								</motion.div>
+
+								<motion.div variants={item}>
+									<Link
+										href={'#contact'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										Contact
+									</Link>
+								</motion.div>
+
+								<motion.div variants={item}>
+									<Link
+										href={'#events'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										Events
+									</Link>
+								</motion.div>
 							</motion.div>
 						</>
 					)}

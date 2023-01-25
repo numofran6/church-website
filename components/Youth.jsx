@@ -1,14 +1,9 @@
 import Image from 'next/image';
 import youth from '../public/assets/youth.jpg';
-import { motion } from 'framer-motion';
 
 export const Youth = () => {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			className="h-[30vh] sm:h-[40vh] relative text-white"
-		>
+		<div className="h-[30vh] sm:h-[40vh] relative text-white">
 			<Image
 				src={youth}
 				alt=""
@@ -28,6 +23,6 @@ export const Youth = () => {
 					</p>
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };

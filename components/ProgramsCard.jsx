@@ -1,11 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-export const ProgramsCard = ({ day, icon, time, serviceName, style }) => {
+export const ProgramsCard = ({ day, icon, time, serviceName }) => {
 	return (
-		<div
-			className={`flex flex-col text-xs sm:text-md sm:hover:scale-110 transition duration-500 cursor-pointer ease-in-out items-center ${style}`}
-		>
+		<div className="flex flex-col text-center text-xs sm:text-md items-center flex-shrink-0 max-w-[5rem]">
 			<Image
 				src={icon}
 				alt=""
