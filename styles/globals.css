@@ -3,5 +3,39 @@
 @tailwind utilities;
 
 .btns {
-	@apply text-amber-400 sm:text-amber-500 active:scale-100 active:text-black sm:active:text-yellow-500 hover:scale-125 hover:text-[#ffff] transition duration-300 ease-out;
+	@apply text-amber-400 sm:text-amber-500 
+		active:scale-90 active:text-black sm:active:text-yellow-500 
+		hover:text-[#ffff] 
+		transition duration-300 ease-out;
+}
+
+.group-date {
+	@apply text-4xl text-gray-300
+		py-3 uppercase
+		mx-8 md:mx-32
+		font-bold tracking-widest;
+}
+
+.timeline {
+	@apply border-l-4 border-gray-200
+		mx-7  md:mx-32 py-10 max-w-2xl
+		space-y-14;
+}
+
+.dot {
+	@apply absolute top-0 -left-3.5 
+	bg-blue-400 
+	h-6 w-6
+	rounded-full
+	border-4 border-white;
+}
+
+.timeline-date {
+	@apply text-xs font-bold uppercase
+	opacity-40 tracking-widest;
+}
+
+.timeline-title {
+	@apply text-3xl text-gray-600 font-semibold
+	tracking-wide;
 }
