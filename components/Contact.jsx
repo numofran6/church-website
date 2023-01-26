@@ -23,7 +23,7 @@ export const Contact = () => {
 				/>
 
 				<div className="absolute top-0 flex flex-col items-center justify-center h-full w-full">
-					<div className="text-center bg-gray-500/50 w-full py-5 text-white font-bold text-lg sm:text-2xl">
+					<div className="text-center bg-gray-500/50 w-full py-5 text-white font-bold text-2xl">
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}

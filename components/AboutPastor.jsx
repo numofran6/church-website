@@ -24,7 +24,7 @@ export const AboutPastor = () => {
 					<p className="text-gray-200 text-xs sm:text-md text-center">
 						Fueled by prayer and a zealous love for God, Rev. Nicholas is
 						passionate about building the local church and advancing God&apos;s
-						kingdom on the earth
+						kingdom on earth
 					</p>
 
 					<button className="btns">FOLLOW REV. NICHOLAS</button>

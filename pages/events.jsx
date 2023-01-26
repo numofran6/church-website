@@ -11,7 +11,7 @@ const Events = () => {
 			end={{ opacity: 0 }}
 		>
 			<Layout title={'Events'}>
-				<div className="h-[25vh] md:h-[30vh] text-white relative">
+				<div className="h-[25vh] md:h-[30vh] text-white relative transition-all duration-300 ease-out">
 					<Image
 						src={'/assets/women.jpg'}
 						alt="Women"

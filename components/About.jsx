@@ -12,21 +12,32 @@ export const About = () => {
 			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl lg:grid grid-cols-4 justify-center items-center mx-auto lg:px-10">
 				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left space-y-5 px-8 lg:px-0">
 					<div>
-						<motion.h1
-							initial={{ opacity: 0, y: 30 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 1.2 }}
-							className="font-bold text-gray-700 text-lg uppercase"
-						>
-							About
-						</motion.h1>
+						<h1 className="font-bold text-gray-700 text-lg uppercase">About</h1>
 						<h1 className="text-4xl font-bold md:font-normal sm:text-amber-400">
 							Our Church
 						</h1>
 					</div>
-					<p className="font-bold text-gray-700">
-						Our mission is to spread the Word of God and the Good News
-					</p>
+
+					<div>
+						<h3 className="text-left text-gray-400 uppercase text-lg font-bold">
+							Our Mission
+						</h3>
+						<p className="font-bold text-gray-600 text-sm">
+							We are people of God committed to the study, practice and spread
+							of the knowledge of His Word by the power of the Holy Spirit
+						</p>
+					</div>
+
+					<div>
+						<h3 className="text-left text-gray-400 uppercase text-lg font-bold">
+							Our Vision
+						</h3>
+						<p className="font-bold text-gray-600 text-sm">
+							To develop members into Christ-like maturity and build health
+							relations to take care of the needs of the Church and serve the
+							Community
+						</p>
+					</div>
 
 					<p className="text-sm text-justify text-gray-500 ">
 						We have a strong sense of community. People and children of all ages
