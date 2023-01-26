@@ -97,7 +97,7 @@ export const Layout = ({ children, title }) => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-[4.5rem] bg-yellow-100 w-full h-[41vh] md:hidden text-sm flex flex-col space-y-5 uppercase items-center justify-center z-20 font-bold"
+								className="absolute top-[4.5rem] bg-yellow-100 w-full h-[41vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link

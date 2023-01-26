@@ -97,12 +97,12 @@ export const Header = () => {
 					</nav>
 				</div>
 
-				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-5 text-xl">
+				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-5">
 					<h2 className="text-sm sm:text-[1rem] font-bold text-gray-400 mb-2">
 						There is no other way except Jesus
 					</h2>
 
-					<div className="space-y-1 text-center font-bold text-[2.7rem] leading-[2.7rem] sm:leading-none sm:text-7xl">
+					<div className="space-y-1 text-center font-bold text-[2.7rem] leading-[2.7rem] text-xl sm:leading-none sm:text-7xl">
 						<h2>We love God.</h2>
 						<h2 className="hidden md:block">We believe in God.</h2>
 					</div>
@@ -114,7 +114,7 @@ export const Header = () => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-0 bg-yellow-100 w-full h-[41vh] md:hidden text-sm flex flex-col space-y-5 uppercase items-center justify-center font-bold"
+								className="absolute top-0 bg-yellow-100 w-full h-[41vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link
