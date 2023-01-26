@@ -9,7 +9,7 @@ export const TimelineCard = ({ date, title, children }) => {
 				<div className="pl-10">
 					<span className="timeline-date">{date} </span>
 					<h3 className="timeline-title">{title} </h3>
-					<p className="text-gray-500">{children}</p>
+					<p className="text-gray-500 text-sm">{children}</p>
 				</div>
 			</div>
 		</div>

@@ -69,14 +69,14 @@ export const Header = () => {
 							<Link href={'#home'} className="btns">
 								Home
 							</Link>
+							<Link href={'events'} className="btns">
+								Events
+							</Link>
 							<Link href={'#about'} className="btns">
 								About
 							</Link>
 							<Link href={'#contact'} className="btns">
 								Contact
-							</Link>
-							<Link href={'events'} className="btns">
-								Events
 							</Link>
 						</div>
 
@@ -128,6 +128,16 @@ export const Header = () => {
 
 								<motion.div variants={item}>
 									<Link
+										href={'events'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										Events
+									</Link>
+								</motion.div>
+
+								<motion.div variants={item}>
+									<Link
 										href={'#about'}
 										onClick={() => setActive(!active)}
 										className="btns"
@@ -143,16 +153,6 @@ export const Header = () => {
 										className="btns"
 									>
 										Contact
-									</Link>
-								</motion.div>
-
-								<motion.div variants={item}>
-									<Link
-										href={'events'}
-										onClick={() => setActive(!active)}
-										className="btns"
-									>
-										Events
 									</Link>
 								</motion.div>
 							</motion.div>

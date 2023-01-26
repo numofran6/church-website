@@ -16,10 +16,12 @@
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^8.1.5",
+    "mapbox-gl": "^2.12.0",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-map-gl": "^7.0.21",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.5"
   },

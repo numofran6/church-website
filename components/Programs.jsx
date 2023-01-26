@@ -1,8 +1,8 @@
 import { ProgramsCard } from './ProgramsCard';
-import prayer from '../public/assets/prayer.png';
-import prayer1 from '../public/assets/prayer1.png';
-import prayer2 from '../public/assets/prayer2.png';
-import prayer3 from '../public/assets/prayer3.png';
+import cross from '../public/assets/prayer.png';
+import prayer from '../public/assets/pray1.png';
+import dove from '../public/assets/dove.png';
+import church from '../public/assets/church1.png';
 
 export const Programs = () => {
 	return (
@@ -17,28 +17,28 @@ export const Programs = () => {
 						serviceName={'Monday Prayers'}
 						day="Monday"
 						time={'8am - 9am'}
-						icon={prayer2}
+						icon={prayer}
 					/>
 
 					<ProgramsCard
 						serviceName={'Light Encounter'}
 						day="Wednesday"
 						time={'7pm - 9pm'}
-						icon={prayer}
+						icon={cross}
 					/>
 
 					<ProgramsCard
 						serviceName={'Dominion Encounter'}
 						day="Thursday"
 						time={'7pm - 8:30pm'}
-						icon={prayer1}
+						icon={dove}
 					/>
 
 					<ProgramsCard
 						serviceName={'Main Service'}
 						day="Sunday"
 						time={'8am - 11:30am'}
-						icon={prayer3}
+						icon={church}
 					/>
 				</div>
 			</div>

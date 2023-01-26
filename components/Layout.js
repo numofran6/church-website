@@ -4,6 +4,7 @@ import { RiMenu4Line } from 'react-icons/ri';
 import { TfiClose } from 'react-icons/tfi';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import { Footer } from './Footer';
 
 const list = {
 	visible: {
@@ -50,7 +51,7 @@ export const Layout = ({ children, title }) => {
 	return (
 		<>
 			<Head>
-				<title>{title ? title + ' - Glorious Hill' : 'Glorious Hill'} </title>
+				<title>{title ? title + ' - Glorious Hill' : 'Glorious Hill'}</title>
 			</Head>
 
 			<div className="flex flex-col">
@@ -62,14 +63,14 @@ export const Layout = ({ children, title }) => {
 							<Link href={'/#home'} className="btns">
 								Home
 							</Link>
+							<Link href={'events'} className="btns">
+								Events
+							</Link>
 							<Link href={'/#about'} className="btns">
 								About
 							</Link>
 							<Link href={'/#contact'} className="btns">
 								Contact
-							</Link>
-							<Link href={'events'} className="btns">
-								Events
 							</Link>
 						</div>
 
@@ -110,6 +111,16 @@ export const Layout = ({ children, title }) => {
 
 								<motion.div variants={item}>
 									<Link
+										href={'events'}
+										onClick={() => setActive(!active)}
+										className="btns"
+									>
+										Events
+									</Link>
+								</motion.div>
+
+								<motion.div variants={item}>
+									<Link
 										href={'/#about'}
 										onClick={() => setActive(!active)}
 										className="btns"
@@ -127,16 +138,6 @@ export const Layout = ({ children, title }) => {
 										Contact
 									</Link>
 								</motion.div>
-
-								<motion.div variants={item}>
-									<Link
-										href={'events'}
-										onClick={() => setActive(!active)}
-										className="btns"
-									>
-										Events
-									</Link>
-								</motion.div>
 							</motion.div>
 						</>
 					)}
@@ -144,7 +145,9 @@ export const Layout = ({ children, title }) => {
 
 				<main>{children}</main>
 
-				<footer></footer>
+				<footer>
+					<Footer />
+				</footer>
 			</div>
 		</>
 	);

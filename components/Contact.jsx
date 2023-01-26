@@ -30,7 +30,7 @@ export const Contact = () => {
 							transition={{ duration: 0.8 }}
 							className="uppercase"
 						>
-							Get in Touch
+							Contact Us
 						</motion.p>
 						<h1 className="text-xs sm:text-sm font-normal">
 							We will love to hear from you
