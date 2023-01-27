@@ -11,7 +11,12 @@ const Events = () => {
 			end={{ opacity: 0 }}
 		>
 			<Layout title={'Events'}>
-				<div className="h-[25vh] md:h-[30vh] text-white relative transition-all duration-300 ease-out">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.7 }}
+					className="h-[25vh] md:h-[30vh] text-white relative transition-all duration-300 ease-out"
+				>
 					<Image
 						src={'/assets/women.jpg'}
 						alt="Women"
@@ -28,7 +33,7 @@ const Events = () => {
 							We have lots of exciting events coming. Visit us.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 
 				<section className="my-5">
 					<Timeline />
