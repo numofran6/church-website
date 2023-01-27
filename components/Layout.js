@@ -60,16 +60,16 @@ export const Layout = ({ children, title }) => {
 						<h2 className="sm:text-lg font-bold ">GLORIOUS HILL MINISTRIES</h2>
 
 						<div className="hidden md:flex space-x-6 uppercase">
-							<Link href={'/#home'} className="btns">
+							<Link href={'/#home'} className="btnse">
 								Home
 							</Link>
-							<Link href={'events'} className="btns">
+							<Link href={'events'} className="btnse">
 								Events
 							</Link>
-							<Link href={'/#about'} className="btns">
+							<Link href={'/#about'} className="btnse">
 								About
 							</Link>
-							<Link href={'/#contact'} className="btns">
+							<Link href={'/#contact'} className="btnse">
 								Contact
 							</Link>
 						</div>

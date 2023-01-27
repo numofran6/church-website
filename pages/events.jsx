@@ -14,7 +14,6 @@ const Events = () => {
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ duration: 0.7 }}
 					className="h-[25vh] md:h-[30vh] text-white relative transition-all duration-300 ease-out"
 				>
 					<Image

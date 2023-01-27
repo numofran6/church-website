@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 .btns {
+	@apply text-amber-500
+		active:scale-90 active:text-black sm:active:text-yellow-500 
+		hover:text-[#ffff] 
+		transition duration-300 ease-out;
+}
+
+.btnse {
 	@apply text-amber-400
 		active:scale-90 active:text-black sm:active:text-yellow-500 
 		hover:text-[#ffff] 
