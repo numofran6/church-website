@@ -50,7 +50,7 @@ export const Header = () => {
 	}, [wrapperRef]);
 
 	return (
-		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative transition-all duration-300 ease-out ">
+		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
 			<Image
 				src={sky}
 				width={3950}

@@ -23,9 +23,15 @@ function Home() {
 				<title>Glorious Hill</title>
 			</Head>
 
-			<section id="home" className="bg-slate-500">
+			<motion.section
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.7 }}
+				id="home"
+				className="bg-yellow-800"
+			>
 				<Header />
-			</section>
+			</motion.section>
 
 			<section>
 				<BibleVerse />
