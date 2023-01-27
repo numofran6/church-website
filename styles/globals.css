@@ -42,7 +42,7 @@
 
 .textfield {
 	@apply p-2 rounded-md
-		w-60
+		w-60 placeholder:uppercase placeholder:text-sm
 		outline-none active:outline-none;
 }
 

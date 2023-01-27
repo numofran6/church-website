@@ -6,7 +6,7 @@ import church from '../public/assets/church1.png';
 
 export const Programs = () => {
 	return (
-		<div className="flex flex-col items-center justify-center py-12 bg-stone-100 space-y-5 p-5">
+		<div className="flex flex-col items-center justify-center py-20 bg-stone-100 space-y-5 p-5">
 			<h1 className="text-xl text-gray-600 uppercase font-bold tracking-wide sm:tracking-widest">
 				WEEKLY PROGRAMS
 			</h1>

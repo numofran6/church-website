@@ -11,15 +11,26 @@ import {
 import { motion } from 'framer-motion';
 import getInTouch from '../public/assets/getintouch.jpg';
 import Image from 'next/image';
+import { useState } from 'react';
+import Map, {
+	FullscreenControl,
+	GeolocateControl,
+	Marker,
+	NavigationControl,
+} from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const Contact = () => {
+	const [lng, setLng] = useState(-0.029529);
+	const [lat, setLat] = useState(5.694385);
+
 	return (
-		<div className="w-full md:grid md:grid-cols-3">
-			<div className="relative h-full w-full">
+		<div className="w-full lg:grid lg:grid-cols-6 space-y-10 lg:space-y-0">
+			<div className="relative h-full w-full col-span-2">
 				<Image
 					src={getInTouch}
 					alt="Get In Touch"
-					className="w-full h-[30vh] sm:h-[35vh] object-cover"
+					className="w-full h-[40vh] sm:h-[44vh] object-cover"
 				/>
 
 				<div className="absolute top-0 flex flex-col items-center justify-center h-full w-full">
@@ -39,34 +50,34 @@ export const Contact = () => {
 				</div>
 			</div>
 
-			<div className="p-4 sm:ml-10 sm:p-7 space-y-10 md:col-span-2 flex flex-col justify-center">
-				<div className="text-sm text-gray-700 space-y-2">
+			<div className="lg:col-span-2 flex flex-col items-center justify-center space-y-10  text-gray-900">
+				<div className="space-y-2 font-semibold">
 					<p className="flex items-center text-xs sm:text-sm">
 						<span>
-							<ImLocation className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-amber-500" />
+							<ImLocation className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
 						Ghana, Ashaiman - Zenu. Block Factory
 					</p>
 
 					<p className="flex items-center text-xs sm:text-sm">
 						<span>
-							<ImPhone className="w-4 h-4 sm:h-4 sm:w-5 mr-1 sm:mr-2 text-amber-500" />
+							<ImPhone className="w-4 h-4 sm:h-4 sm:w-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
 						025 713 6081 | 025 718 1311
 					</p>
 
 					<p className="flex items-center text-xs sm:text-sm">
 						<span>
-							<MdAccessTime className="w-5 h-5 mr-1 sm:mr-2 text-amber-500" />
+							<MdAccessTime className="w-5 h-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
-						Service: Sun. 8:00am - 11:30am
+						Main Service: Sundays 8:00am - 11:30am
 					</p>
 				</div>
 
-				<div className="flex items-center space-x-2 sm:space-x-5 text-sm">
-					<p className="font-bold text-gray-700">Social Media</p>
+				<div className="space-y-2">
+					<p className="font-bold">Social Media</p>
 
-					<span className="flex space-x-3 sm:space-x-5 text-amber-500">
+					<span className="flex space-x-3 sm:space-x-5 text-amber-400">
 						<FaFacebook className="w-5 h-5 " />
 						<FaTwitter className="w-5 h-5" />
 						<FaLinkedin className="w-5 h-5" />
@@ -75,6 +86,24 @@ export const Contact = () => {
 						<FaPodcast className="w-5 h-5" />
 					</span>
 				</div>
+			</div>
+
+			<div className="lg:col-span-2 h-[40vh] sm:h-[44vh] flex justify-center lg:justify-end">
+				<Map
+					mapboxAccessToken="pk.eyJ1IjoibnVtb2ZyYW42IiwiYSI6ImNsZGRiZWFqNzAxaHYzdnJzZGsxMG5uankifQ.kKG8lHf3En9AwmENBOVmfQ"
+					initialViewState={{
+						longitude: lng,
+						latitude: lat,
+						zoom: 12,
+					}}
+					style={{ width: '100%' }}
+					mapStyle="mapbox://styles/mapbox/streets-v9"
+				>
+					<Marker longitude={lng} latitude={lat} />
+					<NavigationControl position="bottom-right" />
+					<FullscreenControl />
+					<GeolocateControl />
+				</Map>
 			</div>
 		</div>
 	);
