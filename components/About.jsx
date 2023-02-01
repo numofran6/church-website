@@ -22,7 +22,7 @@ export const About = () => {
 						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
 							Our Mission
 						</h3>
-						<p className="font-bold text-gray-600 text-sm">
+						<p className="text-gray-800 text-sm">
 							We are people of God committed to the study, practice and spread
 							of the knowledge of His Word by the power of the Holy Spirit
 						</p>
@@ -32,7 +32,7 @@ export const About = () => {
 						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
 							Our Vision
 						</h3>
-						<p className="font-bold text-gray-600 text-sm">
+						<p className="text-gray-800 text-sm">
 							To develop members into Christ-like maturity and build health
 							relations to take care of the needs of the Church and serve the
 							Community
