@@ -19,7 +19,7 @@ export const About = () => {
 					</div>
 
 					<div>
-						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
+						<h3 className="text-left text-gray-500 uppercase text-sm font-bold">
 							Our Mission
 						</h3>
 						<p className="text-gray-800 text-sm">
@@ -29,7 +29,7 @@ export const About = () => {
 					</div>
 
 					<div>
-						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
+						<h3 className="text-left text-gray-500 uppercase text-sm font-bold">
 							Our Vision
 						</h3>
 						<p className="text-gray-800 text-sm">
