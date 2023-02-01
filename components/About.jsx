@@ -19,7 +19,7 @@ export const About = () => {
 					</div>
 
 					<div>
-						<h3 className="text-left text-gray-400 uppercase text-lg font-bold">
+						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
 							Our Mission
 						</h3>
 						<p className="font-bold text-gray-600 text-sm">
@@ -29,7 +29,7 @@ export const About = () => {
 					</div>
 
 					<div>
-						<h3 className="text-left text-gray-400 uppercase text-lg font-bold">
+						<h3 className="text-left text-gray-400 uppercase text-sm font-bold">
 							Our Vision
 						</h3>
 						<p className="font-bold text-gray-600 text-sm">
@@ -42,9 +42,8 @@ export const About = () => {
 					<p className="text-sm text-justify text-gray-500 ">
 						We have a strong sense of community. People and children of all ages
 						here are encouraged to learn about their own faith and the role of
-						the church in our community and worldwide. We invite anyone and
-						everyone to attend our Sunday gathering to celebrate God in song,
-						scripture and prayer
+						the church in our community. We invite anyone and everyone to attend
+						our Sunday gathering to celebrate God in song, scripture and prayer
 					</p>
 				</div>
 
