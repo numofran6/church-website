@@ -19,7 +19,7 @@ export const Timeline = () => {
 				</div>
 
 				<div>
-					<TimelineCard title={'Event 2'} date={'13 January 2023'}>
+					<TimelineCard title={'Event 2'} date={'18 January 2023'}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
 						aut numquam sequi deserunt cupiditate facere, molestiae veniam
 						accusantium amet omnis odio quae dolore at, tenetur suscipit tempore
@@ -34,7 +34,7 @@ export const Timeline = () => {
 				</div>
 
 				<div className="bg-gray-100">
-					<TimelineCard title={'Event 1'} date={'13 January 2023'}>
+					<TimelineCard title={'Event 1'} date={'13 February 2023'}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
 						aut numquam sequi deserunt cupiditate facere, molestiae veniam
 						accusantium amet omnis odio quae dolore at, tenetur suscipit tempore
@@ -43,7 +43,7 @@ export const Timeline = () => {
 				</div>
 
 				<div>
-					<TimelineCard title={'Event 2'} date={'13 January 2023'}>
+					<TimelineCard title={'Event 2'} date={'21 February 2023'}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
 						aut numquam sequi deserunt cupiditate facere, molestiae veniam
 						accusantium amet omnis odio quae dolore at, tenetur suscipit tempore
