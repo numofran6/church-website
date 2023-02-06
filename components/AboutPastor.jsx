@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 export const AboutPastor = () => {
 	return (
-		<div className="h-[40vh] relative bg-stone-800 text-white">
+		<div className="h-[45vh] md:h-[40vh] relative bg-stone-800 text-white">
 			<Image
 				src={'/assets/pastor3.png'}
 				width={1200}
 				height={400}
 				alt=""
-				className="h-[40vh] w-[100vw] object-cover"
+				className="h-[45vh] md:h-[40vh] w-[100vw] object-cover"
 			/>
 
 			<div className="absolute top-0 h-full w-full text-center">

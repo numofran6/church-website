@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useRef } from 'react';
-import sky from '../public/assets/sky2.jpg';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import sky from '../public/assets/bg3.jpg';
 import { motion } from 'framer-motion';
 import { RiMenu4Line } from 'react-icons/ri';
 import { TfiClose } from 'react-icons/tfi';
@@ -50,32 +49,32 @@ export const Header = () => {
 	}, [wrapperRef]);
 
 	return (
-		<div className="h-[50vh] sm:h-[60vh] w-[100vw] sm:w-full relative">
+		<div className="h-[50vh] sm:h-[70vh] w-[100vw] sm:w-full relative">
 			<Image
 				src={sky}
 				width={3950}
 				height={4937}
 				alt="Header"
-				className="w-[100vw] h-[50vh] sm:h-[60vh] object-cover"
+				className="w-[100vw] h-[50vh] sm:h-[70vh] object-cover"
 				priority
 			/>
 
-			<div className="absolute top-0 w-full text-white">
-				<div className="bg-opacity-20 md:bg-opacity-10 bg-gray-200">
+			<div className="absolute top-0 w-full text-white z-10">
+				<div className="bg-cyan-600/10">
 					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5">
 						<h1 className="sm:text-lg font-bold">GLORIOUS HILL MINISTRIES</h1>
 
 						<div className="hidden md:flex space-x-6 uppercase">
-							<Link href={'#home'} className="btns">
+							<Link href={'#home'} className="navlinks">
 								Home
 							</Link>
-							<Link href={'events'} className="btns">
+							<Link href={'events'} className="navlinks">
 								Events
 							</Link>
-							<Link href={'#about'} className="btns">
+							<Link href={'#about'} className="navlinks">
 								About
 							</Link>
-							<Link href={'#contact'} className="btns">
+							<Link href={'#contact'} className="navlinks">
 								Contact
 							</Link>
 						</div>
@@ -96,13 +95,15 @@ export const Header = () => {
 						</div>
 					</nav>
 				</div>
+			</div>
 
-				<div className="min-h-[35vh] relative sm:min-h-[40vh] flex flex-col justify-center items-center md:space-y-5">
-					<h2 className="text-sm sm:text-[1rem] font-bold text-gray-400 mb-2">
+			<div className="absolute top-0 h-full w-full text-white">
+				<div className="h-full relative flex flex-col justify-center items-center space-y-5">
+					<h2 className="text-sm sm:text-[1rem] font-bold text-gray-100">
 						There is no other way except Jesus
 					</h2>
 
-					<div className="space-y-1 text-center font-bold text-[2.7rem] leading-[2.7rem] text-xl sm:leading-none sm:text-7xl">
+					<div className="space-y-1 text-center font-bold text-[2.7rem] leading-[2.7rem] text-xl sm:leading-none md:text-5xl lg:text-7xl">
 						<h2>We love God.</h2>
 						<h2 className="hidden md:block">We believe in God.</h2>
 					</div>
@@ -114,7 +115,7 @@ export const Header = () => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-0 bg-yellow-100 w-full h-[41vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold"
+								className="absolute top-[3.3rem] bg-yellow-100 w-full h-[40vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link

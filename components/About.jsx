@@ -10,7 +10,7 @@ export const About = () => {
 	return (
 		<div className="min-h-[30vh] py-10 flex justify-center">
 			<div className="lg:max-w-5xl md:max-w-3xl max-w-xl lg:grid grid-cols-4 justify-center items-center mx-auto lg:px-10">
-				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left space-y-5 px-8 lg:px-0">
+				<div className="flex flex-col items-center lg:items-start lg:col-span-2 text-center lg:text-left md:max-w-xl lg:max-w-none space-y-5 px-8 lg:px-0 sm:text-sm text-xs">
 					<div>
 						<h1 className="font-bold text-gray-700 text-lg uppercase">About</h1>
 						<h1 className="text-4xl font-bold md:font-normal sm:text-amber-400">
@@ -18,32 +18,30 @@ export const About = () => {
 						</h1>
 					</div>
 
-					<div>
-						<h3 className="text-left text-gray-500 uppercase text-sm font-bold">
+					<div className="">
+						<h3 className=" text-gray-500 uppercase text-sm font-bold">
 							Our Mission
 						</h3>
-						<p className="text-gray-800 text-sm">
+						<p className="text-gray-800  text-justify sm:text-left">
 							We are people of God committed to the study, practice and spread
 							of the knowledge of His Word by the power of the Holy Spirit
 						</p>
 					</div>
 
 					<div>
-						<h3 className="text-left text-gray-500 uppercase text-sm font-bold">
+						<h3 className=" text-gray-500 uppercase text-sm font-bold">
 							Our Vision
 						</h3>
-						<p className="text-gray-800 text-sm">
+						<p className="text-gray-800  text-justify sm:text-left">
 							To develop members into Christ-like maturity and build health
 							relations to take care of the needs of the Church and serve the
 							Community
 						</p>
 					</div>
 
-					<p className="text-sm text-justify text-gray-500 ">
-						We have a strong sense of community. People and children of all ages
-						here are encouraged to learn about their own faith and the role of
-						the church in our community. We invite anyone and everyone to attend
-						our Sunday gathering to celebrate God in song, scripture and prayer
+					<p className=" text-gray-500  text-justify sm:text-left">
+						We invite anyone and everyone to attend our Sunday gathering to
+						celebrate God in song, scripture and prayer.
 					</p>
 				</div>
 
@@ -57,7 +55,7 @@ export const About = () => {
 						<Tag
 							icon={pray}
 							text={'Daily Prayers'}
-							style="w-36 sm:w-44 h-32 bg-stone-100"
+							style="w-36 sm:w-44 h-36 bg-stone-100"
 						/>
 						<Tag
 							icon={bible}
@@ -80,7 +78,7 @@ export const About = () => {
 						<Tag
 							icon={church}
 							text={'Set of Sermons'}
-							style={'w-36 sm:w-44 h-32 bg-stone-100'}
+							style={'w-36 sm:w-44 h-36 bg-stone-100'}
 						/>
 					</motion.div>
 				</div>

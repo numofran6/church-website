@@ -52,7 +52,7 @@ export const Footer = () => {
 						<textarea
 							type="text"
 							placeholder="Leave us a message"
-							rows={5}
+							rows={3}
 							className="textfield"
 						></textarea>
 						<button className="sendbtn">Send</button>

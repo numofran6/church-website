@@ -55,7 +55,7 @@ export const Layout = ({ children, title }) => {
 			</Head>
 
 			<div className="flex flex-col">
-				<header className="bg-yellow-800 text-white">
+				<header className="bg-yellow-700 text-white">
 					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5">
 						<h2 className="sm:text-lg font-bold ">GLORIOUS HILL MINISTRIES</h2>
 

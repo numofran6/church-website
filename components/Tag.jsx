@@ -12,6 +12,7 @@ export const Tag = ({ icon, text, style }) => {
 				width={512}
 				height={512}
 				className="w-10 h-10 opacity-60"
+				priority
 			/>
 
 			<h1>{text}</h1>

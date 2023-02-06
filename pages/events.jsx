@@ -24,7 +24,7 @@ const Events = () => {
 						className="w-full h-full object-cover"
 					/>
 
-					<div className="absolute top-0 bg-gray-800/80 h-full w-full flex flex-col items-center justify-center text-amber-500">
+					<div className="absolute top-0 bg-gray-800/60 h-full w-full flex flex-col items-center justify-center text-amber-500">
 						<h3 className="font-bold uppercase text-xl md:text-3xl tracking-wider">
 							Upcoming Events
 						</h3>
