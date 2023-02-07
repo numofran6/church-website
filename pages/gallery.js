@@ -12,8 +12,8 @@ const images = [
 	'/assets/gallery/pastorNic.jpg',
 	'/assets/gallery/worship1.jpg',
 	'/assets/gallery/kids.jpg',
-	'/assets/gallery/event.jpg',
 	'/assets/gallery/worship.jpg',
+	'/assets/gallery/event.jpg',
 	'/assets/gallery/kid.jpg',
 	'/assets/gallery/youth.jpg',
 ];
