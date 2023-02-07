@@ -10,12 +10,11 @@ import { motion } from 'framer-motion';
 const images = [
 	'/assets/gallery/women.jpg',
 	'/assets/gallery/pastorNic.jpg',
-	'/assets/gallery/pastor.jpg',
-	'/assets/gallery/pastor1.jpg',
+	'/assets/gallery/worship1.jpg',
+	'/assets/gallery/kids.jpg',
+	'/assets/gallery/worship.jpg',
 	'/assets/gallery/kid.jpg',
 	'/assets/gallery/event.jpg',
-	'/assets/gallery/worship.jpg',
-	'/assets/gallery/worship1.jpg',
 	'/assets/gallery/youth.jpg',
 ];
 
