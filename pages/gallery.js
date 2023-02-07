@@ -74,14 +74,14 @@ const Gallery = () => {
 				{imageInView.img && (
 					<div className="top-0 bottom-0 left-0 right-0 bg-black/90 fixed flex justify-center items-center overflow-hidden z-10">
 						<TfiClose
-							className="absolute top-10 right-10 btns cursor-pointer w-10 h-10"
+							className="absolute top-10 right-3 md:right-10 btns cursor-pointer w-10 h-10"
 							onClick={() => imageAction()}
 						/>
 
 						<button
 							onClick={() => imageAction('previous-img')}
 							disabled={imageInView.i === 0}
-							className="z-20 arrows absolute left-10"
+							className="z-20 arrows absolute left-3 md:left-10"
 						>
 							<SlArrowLeft className="w-14 h-14" />
 						</button>

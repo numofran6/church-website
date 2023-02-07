@@ -97,13 +97,13 @@ export const Layout = ({ children, title }) => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-[4.5rem] bg-yellow-100 w-full h-[41vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
+								className="absolute top-[4.5rem] bg-yellow-700 pb-5 w-full h-[30vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link
 										href={'/#home'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btnse"
 									>
 										Home
 									</Link>
@@ -113,7 +113,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btnse"
 									>
 										Events
 									</Link>
@@ -123,7 +123,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/gallery'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btnse"
 									>
 										Gallery
 									</Link>
@@ -133,7 +133,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/#contact'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btnse"
 									>
 										Contact
 									</Link>
