@@ -12,9 +12,9 @@ const images = [
 	'/assets/gallery/pastorNic.jpg',
 	'/assets/gallery/worship1.jpg',
 	'/assets/gallery/kids.jpg',
+	'/assets/gallery/event.jpg',
 	'/assets/gallery/worship.jpg',
 	'/assets/gallery/kid.jpg',
-	'/assets/gallery/event.jpg',
 	'/assets/gallery/youth.jpg',
 ];
 
@@ -156,7 +156,7 @@ const Gallery = () => {
 								setLoadedImageNumber((prevNumber) => prevNumber * 2);
 								setLoadedImages(images.slice(0, loadedImageNumber * 2));
 							}}
-							disabled={loadedImageNumber > images.length}
+							disabled={loadedImageNumber >= images.length}
 							className="disabled:text-gray-500 text-amber-400 hover:text-amber-600"
 						>
 							Load More...
