@@ -66,8 +66,8 @@ export const Layout = ({ children, title }) => {
 							<Link href={'events'} className="btnse">
 								Events
 							</Link>
-							<Link href={'/#about'} className="btnse">
-								About
+							<Link href={'gallery'} className="btnse">
+								Gallery
 							</Link>
 							<Link href={'/#contact'} className="btnse">
 								Contact
@@ -121,11 +121,11 @@ export const Layout = ({ children, title }) => {
 
 								<motion.div variants={item}>
 									<Link
-										href={'/#about'}
+										href={'/gallery'}
 										onClick={() => setActive(!active)}
 										className="btns"
 									>
-										About
+										Gallery
 									</Link>
 								</motion.div>
 

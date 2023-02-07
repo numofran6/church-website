@@ -22,7 +22,7 @@ function Home() {
 				<title>Glorious Hill</title>
 			</Head>
 
-			<motion.section id="home" className="bg-cyan-500">
+			<motion.section id="home" className="bg-cyan-800">
 				<Header />
 			</motion.section>
 

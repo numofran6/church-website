@@ -4,14 +4,14 @@
 
 .btns {
 	@apply text-amber-500
-		active:scale-90 active:text-black sm:active:text-yellow-500 
+		active:scale-90 active:text-black sm:active:text-amber-500 
 		hover:text-[#ffff] 
 		transition duration-300 ease-out;
 }
 
 .navlinks {
 	@apply text-amber-400
-		active:scale-90 active:text-black sm:active:text-yellow-500 
+		active:scale-90 active:text-black sm:active:text-amber-500 
 		hover:text-[#ffff] 
 		transition duration-300 ease-out
 		font-semibold;
@@ -19,9 +19,17 @@
 
 .btnse {
 	@apply text-amber-300
-		active:scale-90 active:text-black sm:active:text-yellow-500 
+		active:scale-90 active:text-black sm:active:text-amber-500 
 		hover:text-[#ffff] 
 		transition duration-300 ease-out;
+}
+
+.arrows {
+	@apply text-amber-500
+		active:scale-90 active:text-black sm:active:text-amber-500 
+		hover:text-[#ffff] 
+		transition duration-300 ease-out
+		disabled:text-gray-500;
 }
 
 .group-date {

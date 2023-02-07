@@ -71,8 +71,8 @@ export const Header = () => {
 							<Link href={'events'} className="navlinks">
 								Events
 							</Link>
-							<Link href={'#about'} className="navlinks">
-								About
+							<Link href={'gallery'} className="navlinks">
+								Gallery
 							</Link>
 							<Link href={'#contact'} className="navlinks">
 								Contact
@@ -139,11 +139,11 @@ export const Header = () => {
 
 								<motion.div variants={item}>
 									<Link
-										href={'#about'}
+										href={'gallery'}
 										onClick={() => setActive(!active)}
 										className="btns"
 									>
-										About
+										Gallery
 									</Link>
 								</motion.div>
 

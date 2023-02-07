@@ -16,6 +16,9 @@ export const Footer = () => {
 						<Link href={'events'} className="btns">
 							Events
 						</Link>
+						<Link href={'gallery'} className="btns">
+							Gallery
+						</Link>
 						<Link href={'/#about'} className="btns">
 							About
 						</Link>

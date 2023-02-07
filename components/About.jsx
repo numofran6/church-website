@@ -5,6 +5,7 @@ import church from '../public/assets/church.png';
 import pray from '../public/assets/pray.png';
 import question from '../public/assets/question.png';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const About = () => {
 	return (
@@ -41,7 +42,14 @@ export const About = () => {
 
 					<p className=" text-gray-500  text-justify sm:text-left">
 						We invite anyone and everyone to attend our Sunday gathering to
-						celebrate God in song, scripture and prayer.
+						celebrate God.{' '}
+						<Link
+							href={'/gallery'}
+							className="btns font-semibold hover:text-amber-800"
+						>
+							Explore Our Gallery
+						</Link>{' '}
+						to get familiar with us.
 					</p>
 				</div>
 
