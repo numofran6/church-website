@@ -3,6 +3,10 @@
 <h1>
 Church Blog
 </h1>
+
+<p>
+This project is a volunteered effort to help contribute to my church's advertisement initiative by building the church a web application.  I focused on making the web page aesthetically pleasing so that visitors will stick around long enough to read extensively about the church.
+</p>
 </div>
 
 ---
