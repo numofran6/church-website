@@ -13,8 +13,7 @@
 	@apply text-amber-400
 		active:scale-90 active:text-black sm:active:text-amber-500 
 		hover:text-[#ffff] 
-		transition duration-300 ease-out
-		font-semibold;
+		transition duration-300 ease-out;
 }
 
 .btnse {
