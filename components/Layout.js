@@ -56,8 +56,8 @@ export const Layout = ({ children, title }) => {
 
 			<div className="flex flex-col">
 				<header className="bg-yellow-700 text-white">
-					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5">
-						<h2 className="sm:text-lg font-bold ">GLORIOUS HILL MINISTRIES</h2>
+					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30">
+						<h2 className="sm:text-lg font-bold z-30">GLORIOUS HILL MINISTRIES</h2>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'/#home'} className="btnse">
@@ -74,7 +74,7 @@ export const Layout = ({ children, title }) => {
 							</Link>
 						</div>
 
-						<div className="md:hidden">
+						<div className="md:hidden z-30">
 							{!active && (
 								<RiMenu4Line
 									onClick={() => setActive(!active)}
@@ -97,13 +97,13 @@ export const Layout = ({ children, title }) => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-[4.5rem] bg-yellow-700 pb-5 w-full h-[30vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
+								className="fixed top-0 bottom-0 left-0 right-0 bg-yellow-700 pb-5 md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link
 										href={'/#home'}
 										onClick={() => setActive(!active)}
-										className="btnse"
+										className="btnse text-xl"
 									>
 										Home
 									</Link>
@@ -113,7 +113,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className="btnse"
+										className="btnse text-xl"
 									>
 										Events
 									</Link>
@@ -123,7 +123,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/gallery'}
 										onClick={() => setActive(!active)}
-										className="btnse"
+										className="btnse  text-xl"
 									>
 										Gallery
 									</Link>
@@ -133,7 +133,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/#contact'}
 										onClick={() => setActive(!active)}
-										className="btnse"
+										className="btnse text-xl"
 									>
 										Contact
 									</Link>

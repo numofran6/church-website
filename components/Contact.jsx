@@ -43,7 +43,7 @@ export const Contact = () => {
 						>
 							Contact Us
 						</motion.p>
-						<h1 className="text-xs sm:text-sm font-normal">
+						<h1 className="text-sm font-normal">
 							We will love to hear from you
 						</h1>
 					</div>
@@ -52,23 +52,23 @@ export const Contact = () => {
 
 			<div className="lg:col-span-2 flex flex-col items-center justify-center space-y-10  text-gray-900">
 				<div className="space-y-2 font-semibold">
-					<p className="flex items-center text-xs sm:text-sm">
+					<p className="flex items-center text-sm">
 						<span>
 							<ImLocation className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
 						Ghana, Ashaiman - Zenu. Block Factory
 					</p>
 
-					<p className="flex items-center text-xs sm:text-sm">
+					<p className="flex items-center text-sm">
 						<span>
 							<ImPhone className="w-4 h-4 sm:h-4 sm:w-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
 						025 713 6081 | 025 718 1311
 					</p>
 
-					<p className="flex items-center text-xs sm:text-sm">
+					<p className="flex items-center text-sm">
 						<span>
-							<MdAccessTime className="w-5 h-5 mr-1 sm:mr-2 text-amber-400" />
+							<MdAccessTime className="w-4 h-5 sm:w-5 mr-1 sm:mr-2 text-amber-400" />
 						</span>
 						Main Service: Sundays 8:00am - 11:30am
 					</p>

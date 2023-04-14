@@ -24,12 +24,12 @@ const Events = () => {
 						className="w-full h-full object-cover"
 					/>
 
-					<div className="absolute top-0 bg-gray-800/60 h-full w-full flex flex-col items-center justify-center text-amber-500">
+					<div className="absolute top-0 bg-gray-800/60 h-full w-full flex flex-col items-center justify-center text-center text-amber-500 px-5">
 						<h3 className="font-bold uppercase text-xl md:text-3xl tracking-wider">
 							Upcoming Events
 						</h3>
-						<p className="text-sm">
-							We invite and welcome you to all of our events. Visti us.
+						<p className=" font-bold text-gray-300">
+							We invite and welcome you to all of our events. Visit us.
 						</p>
 					</div>
 				</motion.div>

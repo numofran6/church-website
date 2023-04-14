@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const AboutPastor = () => {
 	return (
-		<div className="h-[45vh] md:h-[40vh] relative bg-stone-800 text-white">
+		<div className="min-h-[45vh] md:min-h-[40vh] relative bg-stone-800 text-white">
 			<Image
 				src={'/assets/pastor3.png'}
 				width={1200}
@@ -17,17 +17,17 @@ export const AboutPastor = () => {
 						Meet our Reverend
 					</h1>
 
-					<p className="text-gray-200 text-sm md:text-md">
+					<p className="text-amber-500 text-sm">
 						Rev. Nicholas Humphrey Ackumey
 					</p>
 
-					<p className="text-gray-200 text-xs sm:text-md text-center">
+					<p className="text-gray-200 text-sm sm:text-md text-center">
 						Fueled by prayer and a zealous love for God, Rev. Nicholas is
 						passionate about building the local church and advancing God&apos;s
 						kingdom on earth
 					</p>
 
-					<button className="btns">FOLLOW REV. NICHOLAS</button>
+					{/* <button className="btns">FOLLOW REV. NICHOLAS</button> */}
 				</div>
 			</div>
 		</div>

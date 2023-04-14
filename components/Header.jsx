@@ -61,8 +61,10 @@ export const Header = () => {
 
 			<div className="absolute top-0 w-full text-white z-10">
 				<div className="bg-cyan-600/10">
-					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5">
-						<h1 className="sm:text-lg font-bold">GLORIOUS HILL MINISTRIES</h1>
+					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30">
+						<h1 className="sm:text-lg font-bold z-30">
+							GLORIOUS HILL MINISTRIES
+						</h1>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'#home'} className="navlinks">
@@ -79,7 +81,7 @@ export const Header = () => {
 							</Link>
 						</div>
 
-						<div className="md:hidden">
+						<div className="md:hidden z-30">
 							{!active && (
 								<RiMenu4Line
 									onClick={() => setActive(!active)}
@@ -105,7 +107,7 @@ export const Header = () => {
 
 					<div className="space-y-1 text-center font-bold text-[2.7rem] leading-[2.7rem] text-xl sm:leading-none md:text-5xl lg:text-7xl">
 						<h2>We love God.</h2>
-						<h2 className="hidden md:block">We believe in God.</h2>
+						<h2 className="hidden md:block">We love His people.</h2>
 					</div>
 
 					{active && (
@@ -115,13 +117,13 @@ export const Header = () => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="absolute top-[3.3rem] bg-yellow-100 w-full h-[40vh] md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold"
+								className="fixed top-12 bottom-0 right-0 left-0 bg-yellow-100  md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold z-20"
 							>
 								<motion.div variants={item}>
 									<Link
 										href={'#home'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btns text-xl"
 									>
 										Home
 									</Link>
@@ -131,7 +133,7 @@ export const Header = () => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btns text-xl"
 									>
 										Events
 									</Link>
@@ -141,7 +143,7 @@ export const Header = () => {
 									<Link
 										href={'gallery'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btns text-xl"
 									>
 										Gallery
 									</Link>
@@ -151,7 +153,7 @@ export const Header = () => {
 									<Link
 										href={'#contact'}
 										onClick={() => setActive(!active)}
-										className="btns"
+										className="btns text-xl"
 									>
 										Contact
 									</Link>

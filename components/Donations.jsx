@@ -8,7 +8,7 @@ export const Donations = () => {
 					Love God. Love People. Influence the world.
 				</h1>
 
-				<h1 className="text-center text-xs md:text-sm max-w-xs sm:max-w-lg">
+				<h1 className="text-center text-sm max-w-xs sm:max-w-lg">
 					It is a privilge to give back to God what He has graciously give. We
 					commit to being good stewards of your generosity.
 				</h1>

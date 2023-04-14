@@ -59,7 +59,7 @@
 }
 
 .timeline-title {
-	@apply text-3xl text-gray-600 font-semibold
+	@apply text-xl md:text-3xl text-gray-600 font-semibold
 	tracking-wide;
 }
 
