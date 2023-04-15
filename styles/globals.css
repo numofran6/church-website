@@ -78,3 +78,7 @@
 		active:bg-amber-400 active:text-neutral-800
 		transition-all ease-out duration-300;
 }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
